@@ -424,6 +424,7 @@ namespace TraderForPoe
         private void ClickThanksForTrade(object sender, RoutedEventArgs e)
         {
             SendInputToPoe("@" + tItem.Customer + " " + Settings.Default.ThankYouWhisper);
+            ClickKickMyself();
 
             if (Settings.Default.CloseItemAfterThankYouWhisper == true)
             {
